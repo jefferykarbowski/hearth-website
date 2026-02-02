@@ -42,6 +42,41 @@ npm install
 npm run dev
 ```
 
+Open [http://localhost:3000](http://localhost:3000)
+
+## Deployment
+
+The site auto-deploys to Vercel on push to `main`.
+
+### Setup Vercel (first time)
+
+1. Install Vercel CLI: `npm i -g vercel`
+2. Login: `vercel login`
+3. Link project: `vercel link`
+4. Add secrets to GitHub:
+   - `VERCEL_TOKEN` — from https://vercel.com/account/tokens
+   - `VERCEL_ORG_ID` — from `.vercel/project.json`
+   - `VERCEL_PROJECT_ID` — from `.vercel/project.json`
+
+### Manual Deploy
+
+```bash
+vercel --prod
+```
+
+## Environment Variables
+
+```bash
+# .env.local
+DATABASE_URL=postgresql://...
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-secret-key
+GOOGLE_CLIENT_ID=...
+GOOGLE_CLIENT_SECRET=...
+STRIPE_SECRET_KEY=...
+STRIPE_PUBLISHABLE_KEY=...
+```
+
 ## License
 
 MIT
