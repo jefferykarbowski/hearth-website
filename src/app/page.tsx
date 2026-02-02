@@ -147,12 +147,12 @@ export default function Home() {
               <ul className="space-y-3">
                 <SpecRow label="Display" value="7-inch IPS touchscreen" />
                 <SpecRow label="Resolution" value="1024 × 600" />
-                <SpecRow label="Processor" value="Quad-core ARM" />
+                <SpecRow label="Processor" value="Allwinner A133 Quad-core 1.6GHz" />
                 <SpecRow label="Memory" value="2GB RAM" />
-                <SpecRow label="Storage" value="16GB (expandable)" />
-                <SpecRow label="Audio" value="Built-in stereo speakers" />
-                <SpecRow label="Connectivity" value="WiFi, Bluetooth 5.0" />
-                <SpecRow label="Power" value="USB-C, 5V/3A" />
+                <SpecRow label="Storage" value="32GB (expandable via TF card)" />
+                <SpecRow label="Audio" value="Built-in speakers + 3.5mm jack" />
+                <SpecRow label="Connectivity" value="WiFi 2.4GHz, Bluetooth 4.2" />
+                <SpecRow label="Power" value="USB-C" />
               </ul>
             </div>
             
